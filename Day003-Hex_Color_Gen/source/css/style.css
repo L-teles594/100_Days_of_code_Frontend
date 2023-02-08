@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+:root {
+    --wite: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-gray: #eee;
+    --color-dark-gray: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.generator {
+    border: 1px solid var(var(--color-dark-gray));
+    width: 50rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--wite);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.generator * {
+    margin-bottom: 10px;
+}
+
+.generator p {
+    width: 100%;
+    border-top: 8px dotted rgba(0, 0, 0, 0.8);
+    height: 0px;
+    opacity: 0.2;
+}
+
+.hex {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.button button {
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-dark-gray);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.button button:hover {
+    transform: scale(1.1);
+    background-color: #e7c077;
+}
+
