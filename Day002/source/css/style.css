@@ -30,10 +30,7 @@ html {
 }
 
 body {
-    background-image: url("../images/cristina-gottardi-Tr55sj841Fg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(90deg, rgba(224,140,61,1) 0%, rgba(236,168,105,1) 48%, rgba(224,140,61,1) 100%);
     font-family: 'Open Sans', 'sans-serif';
 }
 
@@ -49,23 +46,24 @@ img {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.counter-div {
-    width: 40rem;
-    border: 1px solid var(--gray);
-    padding: 1rem;
-    background-color: rgba(0, 84, 144, 0.6);
+.generator-div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 70vmax;
+    padding: ;
     color: var(--white);
     text-align: center;
     border-radius: 10px;
 }
 
-.counter-div > * {
+.generator-div * {
     margin-bottom: 2rem;
 }
 
@@ -73,33 +71,19 @@ img {
     font-size: 4rem;
 }
 
-.buttons button {
-    padding: 1rem;
+.button button {
+    padding: 2rem 1rem 1rem;
     margin: 0 1rem;
     font-size: 1.5rem;
-    color: var(--white);
-    border: none;
+    color: #B08BBB;
     outline: none;
     border-radius: 10px;
     font-weight: 700;
     cursor: pointer;
-    text-transform: uppercase;
     transition: 0.5s all ease-in-out;
 }
 
-.buttons button:hover {
+.button button:hover {
     transform: scale(1.1);
-}
-
-button.subtract {
-    background-color: orangered;
-}
-
-button.reset {
-    background-color:var(--white);
-    color: var(--black)
-}
-
-button.add {
-    background-color: green;
+    background-color: #B5D5C5;
 }
