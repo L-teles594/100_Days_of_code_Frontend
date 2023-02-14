@@ -6,7 +6,7 @@
     --blue: #31326f;
     --light-blue: #005490;
     --color-primary: #9d0191;
-    --color-sec: #db6400;
+    --color-sec: #db0000;
     --color-gray: #eee;
     --color-dark-gray: #222831;
 }
@@ -31,7 +31,7 @@ html {
 
 body {
     font-family: 'Open Sans', 'sans-serif';
-    background-color: var(--light-blue);
+    background: url("../assets/susan-q-yin-2JIvboGLeho-unsplash.jpg") center no-repeat;
 }
 
 p {
@@ -43,37 +43,42 @@ img {
 }
 
 .main {
-    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.471395881006865) 50%, rgba(0,0,0,1) 100%);
+    max-width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.palindrome {
+.counter-vowel {
     width: 40rem;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, .3);
     padding: 5rem 3rem;
     border-radius: 10px;
+
 }
 
-.palindrome > * {
+.counter-vowel > * {
     border: none;
     padding: 1rem 5px;
     font-size: 1.6rem;
     outline: none;
 }
 
-.container input{
+.counter-vowel input {
+    color: var(--color-sec);
+    background-color: rgba(255, 255, 255, .3);
     width: 70%;
     border-bottom: 2px solid var(--color-sec);
+
 }
 
-.container button {
+.counter-vowel button {
     width: 25%;
     border-radius: 3px;
     color: var(--white);
-    background-color: var(--color-primary);
+    background-color: var(--blue);
 }
 
 p.result {
@@ -81,5 +86,5 @@ p.result {
     margin-top: 5px;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--color-dark-gray);
+    color: var(--color-sec);
 }
